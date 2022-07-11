@@ -4,7 +4,7 @@ from django.shortcuts import render  # Ler um arquivo e renderiza-lo
 # Servidor respondendo a request solicitada pelo cliente...
 def home(request):
     # Podemos alterar o diretório. Neste caso, está global no base_templates.
-    return render(request, 'global/home.html', context={
+    return render(request, 'recipes/home.html', context={
         'name': 'Hygor Rasec'
     })
 
